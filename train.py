@@ -13,7 +13,7 @@ from ultralytics import YOLO
 
 if __name__ == '__main__':
     model = YOLO('ultralytics/cfg/models/LFCA-YOLO.yaml')
-    init_seeds(seed=1, deterministic=True
+    init_seeds(seed=1, deterministic=True)
     model.train(data='dataset/data.yaml',
                 cache=False,
                 imgsz=640,
