@@ -36,7 +36,7 @@ vim trian.py:
 ```shell
     model = YOLO('ultralytics/cfg/models/LFCA-YOLO.yaml')
     init_seeds(seed=1, deterministic=True)
-    model.train(data='ultralytics/cfg/datasets/VOC.yaml',
+    model.train(data='ultralytics/cfg/VOC.yaml',
                 cache=False,
                 imgsz=640,
                 epochs=200,
